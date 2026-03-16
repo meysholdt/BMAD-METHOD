@@ -1,0 +1,8 @@
+tasks:
+  install-bmad-skills:
+    name: Install BMAD Skills
+    description: Installs BMAD agents and tools configured for Claude Code
+    triggeredBy:
+      - postDevcontainerStart
+      - manual
+    command: npm install && npx bmad-method install --directory . --tools claude-code --yes
