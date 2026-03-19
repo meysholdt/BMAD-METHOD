@@ -1,4 +1,4 @@
-// The Dev Container format allows you to configure your environment. At the heart of it
+/// The Dev Container format allows you to configure your environment. At the heart of it
 // is a Docker image or Dockerfile which controls the tools available in your environment.
 //
 // See https://aka.ms/devcontainer.json for more information.
@@ -11,5 +11,5 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {}
   },
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && npm install && npx bmad-method install --directory . --tools ona --yes"
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && npm install && npx bmad-method install --directory . --tools claude-code --yes"
 }
